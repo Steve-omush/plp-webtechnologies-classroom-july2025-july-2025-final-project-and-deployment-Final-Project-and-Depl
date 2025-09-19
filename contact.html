@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Solutions - Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Modern Solutions</h2>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Get in Touch</h1>
+          <p class="page-subtitle">
+            Ready to start your project? We'd love to hear from you. Send us a
+            message and we'll respond as soon as possible.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h4>Address</h4>
+                  <p>123 Business Ave<br />Suite 100<br />New York, NY 10001</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>hello@modernsolutions.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <div class="contact-details">
+                  <h4>Business Hours</h4>
+                  <p>
+                    Monday - Friday: 9:00 AM - 6:00 PM<br />Weekend: By
+                    appointment
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service">
+                  <option value="">Select a service...</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="consulting">Business Consulting</option>
+                  <option value="support">Support & Maintenance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="success-message" id="successMessage">
+        <div class="success-content">
+          <div class="success-icon">✅</div>
+          <h3>Message Sent Successfully!</h3>
+          <p>
+            Thank you for reaching out. We'll get back to you within 24 hours.
+          </p>
+          <button class="btn btn-secondary" onclick="closeSuccessMessage()">
+            Close
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Modern Solutions</h3>
+            <p>
+              Delivering innovative solutions for your business needs with
+              cutting-edge technology and exceptional service.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li>Web Development</li>
+              <li>Digital Marketing</li>
+              <li>Business Consulting</li>
+              <li>Support & Maintenance</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Modern Solutions. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
